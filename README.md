@@ -5,22 +5,30 @@ Label image list by make a class label.
 ## BUG!!!
 1. Maybe there have some unfound bugs
 
+# linux
+```
+git clone git@github.com:zsmatlab/labelimg.git
+```
+
+## Python2 + Qt4
+```
+sudo apt-get install pyqt4-dev-tools
+sudo pip install lxml
+cd ROOT/labelimg/
+make qt4py2
+python2 labelImg.py
+```
+
 ## Python3 + Qt5
 
 ```
 sudo apt-get install pyqt5-dev-tools
+cd ROOT/labelimg/
 sudo pip3 install -r requirements/requirements-python3.txt
-```
-
-### Compile
-
-```
-make py3qt5
-```
-### Run
-```
+make qt5py3
 python3 labelImg.py
 ```
+
 ### Steps
 
 1. Click 'Change default saved annotation folder' in Menu/File
@@ -47,4 +55,7 @@ The annotation will be saved to the folder you specify.
 ## Note： 
 1. 文件路径不要包含中文字符
 
-## Reference from github.com/spark001/labelimg
+## 引用自
+```
+github.com/spark001/labelimg
+ ```
