@@ -5,15 +5,22 @@ Label image list by make a class label.
 ## BUG!!!
 1. Maybe there have some unfound bugs
 
-## Usage
+## Python3 + Qt5
+
+```
+sudo apt-get install pyqt5-dev-tools
+sudo pip3 install -r requirements/requirements-python3.txt
+```
 
 ### Compile
 
-Generate .py file from a .qrc file
 ```
-pyrcc5 -o .py .qrc
+make py3qt5
 ```
-
+### Run
+```
+python3 labelImg.py
+```
 ### Steps
 
 1. Click 'Change default saved annotation folder' in Menu/File
@@ -39,3 +46,5 @@ The annotation will be saved to the folder you specify.
 
 ## Note： 
 1. 文件路径不要包含中文字符
+
+## Reference from github.com/spark001/labelimg
